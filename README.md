@@ -39,28 +39,28 @@ Implementasikan fitur READ dengan Factory Method dan tentukan juga relasi antar 
 
 Berikut cara menjalankan programnya dan outputnya 
 
-```txt
+```bash
 $ node index.js readStore
 
 [
-	BoutiqueStore {
+  BoutiqueStore {
     id : 1,
-		name: "This is June",
-		type : "BoutiqueStore", 
-		catalogues: [
-       Catalogue { name : "Black Dress", price: 100000 },
-       Catalogue { name : "Red Dress", price: 100000 },
+    name: "This is June",
+    type : "BoutiqueStore", 
+    catalogues: [
+      Catalogue { name : "Black Dress", price: 100000 },
+      Catalogue { name : "Red Dress", price: 100000 },
     ]
-	},
+  },
   DepartementStore {
     id : 2,
-		name: "H8 Go",
-		type : "DepartementStore", 
-		catalogues: [
-       Catalogue { name: "Black Jacket", price: 180000 },
-       Catalogue { name: "Blue Dress", price: 100000 },
+    name: "H8 Go",
+    type : "DepartementStore",
+    catalogues: [
+      Catalogue { name: "Black Jacket", price: 180000 },
+      Catalogue { name: "Blue Dress", price: 100000 },
     ]
-	}
+  }
 ]
 ```
 
