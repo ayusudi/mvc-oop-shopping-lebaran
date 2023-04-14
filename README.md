@@ -39,7 +39,7 @@ Implementasikan fitur READ dengan Factory Method dan tentukan juga relasi antar 
 
 Berikut cara menjalankan programnya dan outputnya 
 
-```bash
+```txt
 $ node index.js readStore
 
 [
