@@ -6,6 +6,7 @@
    OOP Characteristic, Relasi antar Class dan mengimplementasikan design pattern  Factory
 - Student dapat memanipulasi JSON dengan fs secara Asynchronous melalui CLI.
 - Student dapat membuat aplikasi MVC dan memahami konsep MVC.
+- Student mencoba built-in function .map(), .filter() dan .includes
 
 
 Kita akan menciptakan apalikasi CRUD dengan CLI (Command Line)
