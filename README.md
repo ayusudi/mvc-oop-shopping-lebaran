@@ -1,48 +1,16 @@
 # Shopping Lebaran
 
-Kita akan menciptakan apalikasi CRUD dengan CLI (Command Line)
-Dengan data JSON berikut :
+## Outcome 
 
-```json
-[
-  {
-    "id": 1,
-    "name": "This is June",
-    "type": "BoutiqueStore",
-    "since": 2020,
-    "catalogues": [
-      {
-        "name": "Black Dress",
-        "price": 100000,
-        "madeIn": "Indonesia"
-      },
-      {
-        "name": "Red Dress",
-        "price": 100000,
-        "madeIn": "Indonesia"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "H8 Go",
-    "type": "DepartementStore",
-    "since": 2000,
-    "catalogues": [
-      {
-        "name": "Black Jacket",
-        "price": 180000,
-        "madeIn": "Indonesia"
-      },
-      {
-        "name": "Blue Dress",
-        "price": 100000,
-        "madeIn": "Vietnam"
-      }
-    ]
-  }
-]
-```
+- Student memahmi konsep OOP sesuai studi kasus soal dengan mengimplementasikan 
+   OOP Characteristic, Relasi antar Class dan mengimplementasikan design pattern  Factory
+- Student dapat memanipulasi JSON dengan fs secara Asynchronous melalui CLI.
+- Student dapat membuat aplikasi MVC dan memahami konsep MVC.
+
+
+Kita akan menciptakan apalikasi CRUD dengan CLI (Command Line)
+Dengan data JSON (data.json)
+
 
 ## Release 0 OOP
 
@@ -107,15 +75,26 @@ Berikut cara menjalankan programnya dan outputnya
 ```bash
 $ node index.js addCatalogue <idStore> <catalogueName> <price> <madeIn>
 ```
+
+Contoh berhasil :
+
 ```bash
 $ node index.js addCatalogue 2 "Black Shirt" 100000 Indonesia
 
 Berhasil menambahkan Black Shirt ke DepartementStore H8 Go.
+```
+
+Contoh gagal :
+
 ```bash
 $ node index.js addCatalogue 2 "Black Shirt" 100000 Indonesia
 
 Gagal menambahkan Black Shirt ke DepartementStore H8 Go 
 karena nama tersebut telah ada.
+```
+
+Contoh gagal karena tidak ditemukan id storenya :
+
 ```bash
 $ node index.js addCatalogue 20 "Black Shirt" 100000 Indonesia
 
